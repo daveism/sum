@@ -17,7 +17,7 @@ define([], function() {
         "color": "#80ab00",
         //Counter specific parameters
         "summaryLayer":{
-            "id": "39f4794c842a428b8e5fd08fe728e55a",
+            "id": "",
             "fields":[
                 {
                     "id": "filterField",
