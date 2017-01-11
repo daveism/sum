@@ -1,44 +1,44 @@
 define([
-        "dojo/ready", 
-        "dojo/_base/declare", 
-        "dojo/dom", 
-        "dojo/dom-style", 
+        "dojo/ready",
+        "dojo/_base/declare",
+        "dojo/dom",
+        "dojo/dom-style",
         "dojo/dom-class",
         "dojo/dom-construct",
-        "dojo/_base/lang", 
+        "dojo/_base/lang",
         "dojo/_base/array",
         "dojo/_base/event",
         "dojo/query",
         "dojo/number",
         "dojo/mouse",
-        "esri/arcgis/utils", 
+        "esri/arcgis/utils",
         "esri/dijit/BasemapGallery",
         "esri/graphic",
         "esri/graphicsUtils",
-        "esri/IdentityManager", 
-        "esri/layers/FeatureLayer", 
+        "esri/IdentityManager",
+        "esri/layers/FeatureLayer",
         "esri/tasks/query",
         "esri/tasks/StatisticDefinition",
         "application/ClusterLayer",
         "dojo/on"
     ], function(
-        ready, 
-        declare, 
-        dom, 
-        domStyle, 
+        ready,
+        declare,
+        dom,
+        domStyle,
         domClass,
         domConstruct,
-        lang, 
+        lang,
         array,
         dojoEvent,
         query,
         number,
         mouse,
-        arcgisUtils, 
+        arcgisUtils,
         BasemapGallery,
         Graphic,
         graphicsUtils,
-        IdentityManager, 
+        IdentityManager,
         FeatureLayer,
         Query,
         StatisticDefinition,
@@ -346,7 +346,7 @@ define([
             }
 
             if (this.config.avgFields && this.config.avgFields.length > 0) {
-               sumType = "AVG: ";
+               sumType = "AVERAGE INSPECTION SCORE: ";
                if (this.config.hideSummaryType)
                   sumType = "";
                avgFields = this.config.avgFields;
@@ -591,7 +591,7 @@ define([
                if ((g.attributes[this.config.filterField] == value) || (value == "")){
                   var newg = new Graphic(g.geometry, g.symbol, g.attributes);
                   this.opLayer.add(newg);
-               } 
+               }
             }
             var ext = graphicsUtils.graphicsExtent(this.opLayer.graphics);
             if (ext) {

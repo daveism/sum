@@ -14,7 +14,7 @@ define([], function() {
         //UI specific parameters
         "title": "Summary Viewer",
         "logo": "",
-        "color": "#80ab00",
+        "color": "#858585",
         //Counter specific parameters
         "summaryLayer":{
             "id": "",
