@@ -4,7 +4,7 @@ define([], function() {
     //and url parameters.
     var defaults = {
         "appid": "",
-        "webmap": "7e403c30b5c94335827af189596a447b", 
+        "webmap": "7e403c30b5c94335827af189596a447b",
         "oauthappid": null, //"AFTKRmv16wj14N3z",
         //Group templates must support a group url parameter. This will contain the id of the group.
         //group: "",
@@ -17,11 +17,11 @@ define([], function() {
         "color": "#80ab00",
         //Counter specific parameters
         "summaryLayer":{
-            "id": "",
+            "id": "39f4794c842a428b8e5fd08fe728e55a",
             "fields":[
                 {
                     "id": "filterField",
-                    "fields": [""]
+                    "fields": ["Grade"]
                 },
                 {
                     "id": "sumFields",
@@ -29,20 +29,20 @@ define([], function() {
                 },
                 {
                     "id": "avgFields",
-                    "fields": []
+                    "fields": ["ascore"]
                 },
                 {
                     "id": "minFields",
-                    "fields": []
+                    "fields": [:"ascore"]
                 },
                 {
                     "id": "maxFields",
-                    "fields": []
+                    "fields": ["ascore"]
                 }
             ]
         },
-        "cluster": true,
-        "hideCount": false,
+        "cluster": false,
+        "hideCount": true,
         "hideSummaryType": false,
         "bingmapskey": "", //Enter the url to your organizations bing maps key if you want to use bing basemaps
         "sharinghost": location.protocol + "//" + "www.arcgis.com", //Defaults to arcgis.com. Set this value to your portal or organization host name.
