@@ -33,7 +33,7 @@ define([], function() {
                 },
                 {
                     "id": "minFields",
-                    "fields": [:"ascore"]
+                    "fields": ["ascore"]
                 },
                 {
                     "id": "maxFields",
